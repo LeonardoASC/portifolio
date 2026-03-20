@@ -215,4 +215,54 @@ body {
     .animate-servicoFlip {
         animation: servicoFlip 8s ease-in-out infinite;
     }
+
+    @keyframes cameraSwipeIn {
+        0% {
+            opacity: 0;
+            transform: translate3d(26vw, 0, -120px) scale(1.05);
+            filter: blur(10px) saturate(1.2);
+        }
+
+        62% {
+            opacity: 1;
+            transform: translate3d(-2vw, 0, 0) scale(1.01);
+            filter: blur(2px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scale(1);
+            filter: blur(0);
+        }
+    }
+
+    @keyframes cameraSwipeOut {
+        0% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scale(1);
+            filter: blur(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate3d(-26vw, 0, -120px) scale(0.95);
+            filter: blur(10px) saturate(1.2);
+        }
+    }
+
+    .animacao-camera-entrando {
+        animation: cameraSwipeIn 0.9s cubic-bezier(0.2, 0.86, 0.22, 1) both;
+    }
+
+    .animacao-camera-saindo {
+        animation: cameraSwipeOut 0.9s cubic-bezier(0.18, 1, 0.3, 1) both;
+    }
+
+    @media (max-width: 767px) {
+
+        .animacao-camera-entrando,
+        .animacao-camera-saindo {
+            animation-duration: 0.76s;
+        }
+    }
 }

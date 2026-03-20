@@ -13,12 +13,10 @@ type SecaoPortfolioProps = {
 };
 
 const classesEstado: Record<EstadoSecao, string> = {
-    ativa: 'z-[3] opacity-100 pointer-events-auto [transform:translateZ(0)_scale(1)] blur-none',
-    entrando:
-        'z-[4] pointer-events-none animate-[portalIn_0.86s_cubic-bezier(0.16,1,0.3,1)_both]',
-    saindo:
-        'z-[2] pointer-events-none animate-[portalOut_0.86s_cubic-bezier(0.16,1,0.3,1)_both]',
-    oculta: 'z-[1] opacity-0 pointer-events-none [transform:translateZ(-520px)_scale(0.56)] blur-[4px]',
+    ativa: 'z-[3] opacity-100 pointer-events-auto',
+    entrando: 'z-[4] pointer-events-none animacao-camera-entrando',
+    saindo: 'z-[2] pointer-events-none animacao-camera-saindo',
+    oculta: 'z-[1] opacity-0 pointer-events-none [transform:translate3d(-18vw,0,-120px)_scale(0.94)] blur-[3px]',
 };
 
 const classesCanto: Record<Canto, string> = {
@@ -38,7 +36,7 @@ export function SecaoPortfolio({
     return (
         <section
             id={id}
-            className={`absolute inset-0 flex items-center justify-center ${classeFundo} origin-center will-change-transform backface-hidden ${classesEstado[estado]}`}
+            className={`absolute inset-0 flex items-center justify-center overflow-hidden ${classeFundo} origin-center will-change-transform backface-hidden ${classesEstado[estado]}`}
         >
             <div
                 className="pointer-events-none absolute inset-0"

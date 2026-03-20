@@ -14,8 +14,8 @@ import { ServicosSecao } from './components/portfolio/secoes/ServicosSecao';
 import { SobreSecao } from './components/portfolio/secoes/SobreSecao';
 import { nomesSecoes, type EstadoSecao } from './components/portfolio/dados';
 
-const DURACAO_TRANSICAO_MS = 860;
-const INTERVALO_ROLAGEM_MS = 950;
+const DURACAO_TRANSICAO_MS = 900;
+const INTERVALO_ROLAGEM_MS = 980;
 const DURACAO_LOADING_MS = 1800;
 const DURACAO_ENTRADA_LOGO_MS = 1300;
 
