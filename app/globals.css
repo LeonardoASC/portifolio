@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --background: #080806;
+    --foreground: #e8e0d0;
 }
 
 @theme inline {
@@ -10,13 +10,6 @@
     --color-foreground: var(--foreground);
     --font-sans: var(--font-roboto);
     --font-mono: var(--font-roboto-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
 }
 
 body {
@@ -124,6 +117,65 @@ body {
         }
     }
 
+    @keyframes portalIn {
+        0% {
+            opacity: 0;
+            transform: translateZ(-560px) scale(0.5);
+            filter: blur(6px);
+        }
+
+        55% {
+            opacity: 0.74;
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateZ(0) scale(1);
+            filter: blur(0);
+        }
+    }
+
+    @keyframes portalOut {
+        0% {
+            opacity: 1;
+            transform: translateZ(0) scale(1);
+            filter: blur(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateZ(-680px) scale(0.42);
+            filter: blur(6px);
+        }
+    }
+
+    @keyframes servicosSlideLeft {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes servicoFlip {
+
+        0%,
+        45% {
+            transform: rotateY(0deg);
+        }
+
+        55%,
+        95% {
+            transform: rotateY(180deg);
+        }
+
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+
     .animate-fadeInUp {
         animation: fadeInUp 0.6s ease-out forwards;
     }
@@ -154,5 +206,13 @@ body {
 
     .animate-pulseBright {
         animation: pulse-bright 2s ease-in-out infinite;
+    }
+
+    .animate-servicosSlideLeft {
+        animation: servicosSlideLeft 28s linear infinite;
+    }
+
+    .animate-servicoFlip {
+        animation: servicoFlip 8s ease-in-out infinite;
     }
 }
