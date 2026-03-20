@@ -14,7 +14,7 @@ const metricas = [
 export function SobreSecao({ estado }: SobreSecaoProps) {
     return (
         <SecaoPortfolio id="s1" estado={estado} classeFundo="bg-[#0e0e0b]" cantos={['tl', 'br']}>
-            <div className="relative z-[2] grid w-[92%] max-w-[1080px] items-start gap-12 px-1 py-20 lg:grid-cols-2 lg:items-center lg:gap-28">
+            <div className="relative z-2 grid w-[92%] max-w-270 items-start gap-12 px-1 py-20 lg:grid-cols-2 lg:items-center lg:gap-28">
                 <div>
                     <div className="font-mono text-[9px] font-light tracking-[0.45em] text-[#c9b99a] uppercase">
                         Sobre nós
@@ -24,10 +24,10 @@ export function SobreSecao({ estado }: SobreSecaoProps) {
                         <br />
                         somos
                     </h2>
-                    <p className="text-[13px] leading-7 font-light text-[#6a6458] sm:text-[14px] sm:leading-[1.95]">
-                        A <strong className="font-normal text-[#b8ad9e]">Nihil Labs</strong> é uma
+                    <p className="text-[13px] leading-7 font-light text-[#9b9386] sm:text-[14px] sm:leading-[1.95]">
+                        A <strong className="font-normal text-[#d6c9b5]">Nihil Labs</strong> é uma
                         empresa de tecnologia construída sobre a crença de que{' '}
-                        <strong className="font-normal text-[#b8ad9e]">excelência de engenharia</strong>{' '}
+                        <strong className="font-normal text-[#d6c9b5]">excelência de engenharia</strong>{' '}
                         e visão estratégica são inseparáveis.
                         <br />
                         <br />
@@ -45,7 +45,7 @@ export function SobreSecao({ estado }: SobreSecaoProps) {
                                     {metrica.numero.slice(-1)}
                                 </sup>
                             </div>
-                            <div className="mt-1 font-mono text-[9px] tracking-[0.3em] text-[#6a6458] uppercase">
+                            <div className="mt-1 font-mono text-[9px] tracking-[0.3em] text-[#9b9386] uppercase">
                                 {metrica.label}
                             </div>
                             <div className="mt-2 h-px w-7 bg-[#c9b99a]/30" />

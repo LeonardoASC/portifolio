@@ -44,7 +44,7 @@ export function ServicosSecao({ estado }: ServicosSecaoProps) {
                                         <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#c9b99a] to-transparent opacity-75" />
 
                                         <div className="relative z-2 flex h-full flex-col justify-between gap-4">
-                                            <div className="font-mono text-[9px] font-light tracking-[0.3em] text-[#6a6458]">
+                                            <div className="font-mono text-[9px] font-light tracking-[0.3em] text-[#9b9386]">
                                                 {servico.numero}
                                             </div>
 
@@ -52,7 +52,7 @@ export function ServicosSecao({ estado }: ServicosSecaoProps) {
                                                 <h3 className="mb-2 text-[15px] leading-tight font-medium tracking-[0.01em] text-[#e8e0d0] sm:text-[17px]">
                                                     {servico.titulo}
                                                 </h3>
-                                                <p className="line-clamp-3 text-[12px] leading-6 font-light text-[#6a6458] sm:text-[13px] sm:leading-7">
+                                                <p className="line-clamp-3 text-[12px] leading-6 font-light text-[#9b9386] sm:text-[13px] sm:leading-7">
                                                     {servico.descricao}
                                                 </p>
                                             </div>
@@ -71,7 +71,7 @@ export function ServicosSecao({ estado }: ServicosSecaoProps) {
                                                 <h4 className="mb-2 text-[13px] font-medium tracking-[0.08em] text-[#e8e0d0] uppercase">
                                                     Solução sob medida
                                                 </h4>
-                                                <p className="line-clamp-2 text-[12px] leading-6 font-light text-[#6a6458]">
+                                                <p className="line-clamp-2 text-[12px] leading-6 font-light text-[#9b9386]">
                                                     Engenharia focada em resultado com implementação
                                                     rápida, estável e escalável.
                                                 </p>

@@ -33,12 +33,12 @@ export function HeroSecao({ estado }: HeroSecaoProps) {
 
                 <h1 className="text-9xl sm:text-[clamp(3.4rem,17vw,11.8rem)] leading-[0.92] font-black tracking-[-0.015em] text-[#e8e0d0]">
                     NIHIL
-                    <span className="block font-thin text-[#b8ad9e]">LABS</span>
+                    <span className="block font-thin text-[#d0c3ad]">LABS</span>
                 </h1>
 
                 <div className="my-7 h-14 w-px bg-linear-to-b from-[#c9b99a] to-transparent opacity-50 sm:my-9" />
 
-                <p className="max-w-84 text-[11px] leading-7 font-light tracking-[0.14em] text-[#6a6458] uppercase sm:text-[12px] sm:leading-[1.9] sm:tracking-[0.2em]">
+                <p className="max-w-84 text-[11px] leading-7 font-light tracking-[0.14em] text-[#9b9386] uppercase sm:text-[12px] sm:leading-[1.9] sm:tracking-[0.2em]">
                     Soluções de alto desempenho para negócios que não aceitam o ordinário
                 </p>
 
