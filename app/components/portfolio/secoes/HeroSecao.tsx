@@ -27,22 +27,22 @@ export function HeroSecao({ estado }: HeroSecaoProps) {
             </div>
 
             <div className="relative z-2 flex w-full max-w-5xl flex-col items-center px-6 text-center sm:px-8">
-                <div className="mb-8 font-mono text-xs font-light tracking-[0.34em] text-[#c9b99a] uppercase sm:mb-11 sm:text-[9px] sm:tracking-[0.5em]">
-                    Technology &amp; Innovation — Est. 2024
+                <div className="mb-8 font-mono text-xs font-light tracking-[0.34em] text-[#f0c15a] uppercase sm:mb-11 sm:text-[9px] sm:tracking-[0.5em]">
+                    Technology &amp; Innovation - Est. 2024
                 </div>
 
-                <h1 className="text-9xl sm:text-[clamp(3.4rem,17vw,11.8rem)] leading-[0.92] font-black tracking-[-0.015em] text-[#e8e0d0]">
+                <h1 className="text-9xl leading-[0.92] font-black tracking-[-0.015em] text-[#e8e0d0] sm:text-[clamp(3.4rem,17vw,11.8rem)]">
                     NIHIL
-                    <span className="block font-thin text-[#d0c3ad]">LABS</span>
+                    <span className="block font-thin text-[#f3d18a]">LABS</span>
                 </h1>
 
-                <div className="my-7 h-14 w-px bg-linear-to-b from-[#c9b99a] to-transparent opacity-50 sm:my-9" />
+                <div className="my-7 h-14 w-px bg-linear-to-b from-[#f0c15a] to-transparent opacity-65 sm:my-9" />
 
                 <p className="max-w-84 text-[11px] leading-7 font-light tracking-[0.14em] text-[#9b9386] uppercase sm:text-[12px] sm:leading-[1.9] sm:tracking-[0.2em]">
                     Soluções de alto desempenho para negócios que não aceitam o ordinário
                 </p>
 
-                <div className="pointer-events-none absolute -right-6 -bottom-20 hidden select-none text-[150px] leading-none font-black tracking-[-0.04em] text-[#e8e0d0]/2.5 lg:block">
+                <div className="pointer-events-none absolute -right-6 -bottom-20 hidden select-none text-[150px] leading-none font-black tracking-[-0.04em] text-[#f0c15a]/5 lg:block">
                     24
                 </div>
             </div>

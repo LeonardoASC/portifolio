@@ -47,10 +47,13 @@ export function SecaoPortfolio({
                 }}
             />
 
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#f0c15a]/45 to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-px bg-linear-to-b from-transparent via-[#f0c15a]/18 to-transparent" />
+
             {cantos.map((canto) => (
                 <div
                     key={canto}
-                    className={`pointer-events-none absolute z-1 h-7 w-7 border-[#e8e0d0]/10 ${classesCanto[canto]}`}
+                    className={`pointer-events-none absolute z-1 h-7 w-7 border-[#f0c15a]/18 ${classesCanto[canto]}`}
                 />
             ))}
 
