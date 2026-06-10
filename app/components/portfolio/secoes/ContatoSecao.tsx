@@ -7,11 +7,11 @@ type ContatoSecaoProps = {
 
 const contatos = [
     { label: 'E-mail', valor: 'contato@nihillabs.com.br', href: 'mailto:contato@nihillabs.com.br' },
-    { label: 'Operação', valor: 'Remoto / Brasil', href: null },
-    { label: 'Resposta', valor: 'Até 1 dia útil', href: null },
+    { label: 'Operacao', valor: 'Remoto / Brasil', href: null },
+    { label: 'Resposta', valor: 'Ate 1 dia util', href: null },
 ];
 
-const etapas = ['Diagnóstico', 'Proposta técnica', 'Execução'];
+const etapas = ['Diagnostico', 'Proposta tecnica', 'Execucao'];
 
 export function ContatoSecao({ estado }: ContatoSecaoProps) {
     return (
@@ -23,7 +23,7 @@ export function ContatoSecao({ estado }: ContatoSecaoProps) {
                             Contato comercial
                         </div>
                         <h2 className="mt-3 max-w-210 text-[clamp(2.5rem,8vw,6.2rem)] leading-[0.96] font-black tracking-[-0.02em] text-[#e8e0d0]">
-                            Vamos estruturar seu próximo produto digital.
+                            Vamos estruturar seu proximo produto digital.
                         </h2>
                     </div>
 
@@ -36,8 +36,8 @@ export function ContatoSecao({ estado }: ContatoSecaoProps) {
                     <div className="flex flex-col justify-between border border-[#e8e0d0]/10 bg-[#080806]/65 p-5 sm:p-7">
                         <div>
                             <p className="max-w-130 text-[13px] leading-7 font-light text-[#a9a193] sm:text-[15px] sm:leading-8">
-                                Conte o contexto, o objetivo e o estágio atual do projeto. A partir
-                                disso, retornamos com uma leitura técnica clara e próximos passos.
+                                Conte o contexto, o objetivo e o estagio atual do projeto. A partir
+                                disso, retornamos com uma leitura tecnica clara e proximos passos.
                             </p>
 
                             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -98,9 +98,9 @@ export function ContatoSecao({ estado }: ContatoSecaoProps) {
                     </div>
                 </div>
 
-                <div className="border-t border-[#e8e0d0]/10 pt-5 font-mono text-[9px] tracking-[0.28em] text-[#777066] uppercase">
-                    NIHIL LABS · Technology & Innovation · Est. 2024
-                </div>
+                {/* <div className="border-t border-[#e8e0d0]/10 pt-5 font-mono text-[9px] tracking-[0.28em] text-[#777066] uppercase">
+                    NIHIL LABS - Technology &amp; Innovation - Est. 2024
+                </div> */}
             </div>
         </SecaoPortfolio>
     );

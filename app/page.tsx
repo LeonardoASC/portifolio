@@ -151,7 +151,7 @@ export default function Page() {
     }
 
     return (
-        <main className="relative h-dvh w-full overflow-hidden bg-[#080806] text-[#e8e0d0] cursor-auto md:cursor-none">
+        <main className="relative h-dvh w-full overflow-hidden bg-[#e2e217] text-[#e8e0d0] cursor-auto md:cursor-none">
             <CursorPersonalizado />
             <CamadaRuido />
             <LogoFixo />
@@ -183,7 +183,7 @@ function TelaCarregamentoInicial({
     animarEntradaLogo: boolean;
 }) {
     return (
-        <main className="fixed inset-0 z-9999 overflow-hidden bg-[#080806] text-[#e8e0d0]">
+        <main className="fixed inset-0 z-9999 overflow-hidden bg-[#060806] text-[#e8e0d0]">
             <div
                 className="pointer-events-none absolute inset-0 opacity-[0.025]"
                 style={{
